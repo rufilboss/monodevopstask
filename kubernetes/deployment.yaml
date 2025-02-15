@@ -17,3 +17,7 @@ spec:
         image: asruf/hello-k8s:v0.1.0
         ports:
         - containerPort: 3000
+        imagePullPolicy: Always
+        limits:
+          # memory: "128Mi"
+          # cpu: "500m"
