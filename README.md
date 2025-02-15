@@ -38,13 +38,13 @@ kubectl apply -f kubernetes/service.yaml
 
 ### 2. Access the Application:
 
-- If using minikube:
+- Using minikube:
 Run `minikube ip` to get the cluster IP.
 Access your app at `http://<minikube-ip>:30080`
 
 - For Docker Desktop with Kubernetes, try accessing the app at:
 `http://localhost:<nodePort>`
 
-- For Amazon EKS:
+- If using Amazon EKS:
 Because I use a NodePort service for this project, use the public IP or DNS name of one of your EKS worker nodes along with the nodePort:
 `http://<node-IP>:<nodePort>`
