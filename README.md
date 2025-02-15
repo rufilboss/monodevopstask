@@ -48,3 +48,5 @@ Access your app at `http://<minikube-ip>:30080`
 - If using Amazon EKS:
 Because I use a NodePort service for this project, use the public IP or DNS name of one of your EKS worker nodes along with the nodePort:
 `http://<node-IP>:<nodePort>`
+
+PS: I chose NodePort for simplicity in Minikube, but Ingress is better for production.
